@@ -19,7 +19,7 @@ class TestDataSourceRule  {
         .build()
     val retrofit: Retrofit = Retrofit.Builder()
         .client(okHttp)
-        .baseUrl(server.url("http://192.168.1.101:3000/"))
+        .baseUrl(server.url("http://192.168.1.6:5000/"))
         .addConverterFactory(GsonConverterFactory.create())
         .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
         .build()

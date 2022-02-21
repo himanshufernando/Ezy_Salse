@@ -21,7 +21,7 @@ class LoginRepo(private var client: APIInterface) {
     var appPref = AppPrefs
 
     suspend fun userLogin(user: User): UserBase {
-        var userBase = UserBase()
+        var userBase = UserBase(true, "", 0, User())
         when {
             user.user_mobile.isNullOrEmpty() || user.user_mobile == "null" -> {
                 userBase = setBaseApiModalData(
