@@ -1,0 +1,12 @@
+{
+	"message": "Login successful",
+	"error": false,
+	"code": 200,
+	"data": {
+		"user_id": 1,
+		"user_password": "s123aa",
+		"user_mobile": 711111111,
+		"user_push_token": "",
+		"user_name": "Saman"
+	}
+}
